@@ -8,6 +8,7 @@ public class UsingFiles {
 	public static void main(String[] args) throws FileNotFoundException
 	{
 		String fileName = "/home/alexis/Downloads/myfile.txt";
+		int age = 10;
 		System.out.println("Read a file line by line");
 		PrintWriter out = new PrintWriter(fileName);
 		out.println("A new line");
@@ -20,6 +21,10 @@ public class UsingFiles {
 		{
 			String line = in.nextLine();
 			System.out.println(line);
+		}
+		if (age == 10 )
+		{
+			System.out.printf("Hey there, you are %d", age);
 		}
 
 	}
