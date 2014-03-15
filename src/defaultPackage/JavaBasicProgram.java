@@ -14,7 +14,16 @@ public class JavaBasicProgram
 //    	System.out.println("Hello " + name);
     	
     	double x = 1000 / 3.0;
-    	System.out.printf("%8.2f", x);
+    	System.out.printf("%8.2f \n", x);
+    	
+    	for (int i = 1; i <= 10; i++)
+    	{
+    		System.out.println(i);
+    		if (i == 5)
+    		{
+    			break;
+    		}
+    	}
     }
 }
 
