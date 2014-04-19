@@ -1,12 +1,17 @@
 package com.zinibu.stocks;
 
+import com.zinibu.employee.Employee;
+
+
 public class Stock {
 	public static void main(String[] args) {
-		sayHi();
+		Employee mike = new Employee("John Perez", 102.00, 2000, 5, 1);
+		sayHi(mike.getName());
 	}
 	
-	private static void sayHi() {
-		System.out.println("Hi!");
+	private static void sayHi(String name) {
+		System.out.println("Hi, " + name);
+		System.out.println("I hope you are doing great!");
 	}
-
+	
 }

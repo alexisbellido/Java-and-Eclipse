@@ -20,7 +20,7 @@ public class Employee
 	
 	public String getName()
 	{
-		return sayHi();
+		return name;
 	}
 	
 	public Date getHireDay()
