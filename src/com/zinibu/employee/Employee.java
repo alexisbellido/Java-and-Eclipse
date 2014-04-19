@@ -41,9 +41,21 @@ public class Employee
 		return "super dear " + name;
 	}
 	
-	private String name;
+	public static String sayCompanyName()
+	{
+		return "Acme Company";
+	}
+	
+	private final String name; // we set final because name won't change after the object is created.
 	private Date hireDay;
 	private double salary;
+	public static final int ID = 123; // static constant, so there's only this one for the class, instead of one per instance
+	
+	public static void main(String[] args) {
+		Employee e = new Employee("Mike", 102.47, 2010, 2, 1);
+		System.out.println("Hey from Employee class main " + e.getName() + ", you were hired on " + e.getHireDay() + " and your salary is now " + e.getSalary());
+
+	}
 
 }
 

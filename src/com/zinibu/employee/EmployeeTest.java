@@ -15,7 +15,9 @@ public class EmployeeTest {
 			e.raiseSalary(5);
 			System.out.println("Hello " + e.getName() + ", you were hired on " + e.getHireDay() + " and your salary is now " + e.getSalary());
 		}
-
+		
+		System.out.println("The id for the Employee class is " + Employee.ID);
+		System.out.println("The company name for all employees is " + Employee.sayCompanyName());
 	}
 
 }
