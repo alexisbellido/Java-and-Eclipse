@@ -5,7 +5,7 @@ import java.io.*;
 
 public class UsingFiles {
 
-	public static void main(String[] args) throws FileNotFoundException
+	public static void main(String[] args) throws FileNotFoundException, MyFileNotFoundException
 	{
 //		String fileName = "/home/alexis/Downloads/myfile.txt";
 		String fileName = "/Users/alexis/test.txt";
@@ -19,13 +19,26 @@ public class UsingFiles {
 //		Scanner in = new Scanner(f);
 //		File f = new File("/Users/alexis/test.txt");
 		
-		Scanner in = new Scanner(new File(fileName));
+		Scanner in = null;
+		try {
+			in = new Scanner(new File(fileName));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		while (in.hasNextLine())
 		{
 			String line = in.nextLine();
 			System.out.println(line);
 		}
+		
+		doSomethingToFile("anything.txt");
 
+	}
+	
+	public static void doSomethingToFile( String filename) throws MyFileNotFoundException {
+		System.out.println("Doing something to file:" + filename);
 	}
 
 }

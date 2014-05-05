@@ -1,7 +1,5 @@
 package com.zinibu.employee;
 
-import java.util.*;
-
 public class EmployeeTest {
 
 	public static void main(String[] args) {
