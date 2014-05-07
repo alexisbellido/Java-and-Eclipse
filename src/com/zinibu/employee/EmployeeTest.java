@@ -16,6 +16,8 @@ public class EmployeeTest {
 		
 		System.out.println("The id for the Employee class is " + Employee.ID);
 		System.out.println("The company name for all employees is " + Employee.sayCompanyName());
+		
+		
 	}
 
 }
