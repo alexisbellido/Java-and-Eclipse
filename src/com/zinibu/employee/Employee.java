@@ -36,7 +36,7 @@ public class Employee
 	/**
 	 * @return String salutation and name
 	 */
-	private String sayHi()
+	public String sayHi()
 	{
 		return "super dear " + name;
 	}
@@ -47,6 +47,27 @@ public class Employee
 	}
 	
 	private final String name; // we set final because name won't change after the object is created.
+	
+	private String nickName;
+	
+	/**
+	 * Get the nickName
+	 * 
+	 * @return the nickName
+	 */
+	public String getNickName() {
+		return nickName;
+	}
+
+	/**
+	 * Set the nickName
+	 * 
+	 * @param nickName the nickName to set
+	 */
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
 	private Date hireDay;
 	private double salary;
 	public static final int ID = 123; // static constant, so there's only this one for the class, instead of one per instance
