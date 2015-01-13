@@ -1,7 +1,8 @@
 package com.zinibu.employee;
 
-public class EmployeeTest {
 
+public class EmployeeTest {
+	
 	public static void main(String[] args) {
 		Employee[] staff = new Employee[3];
 		staff[0] = new Employee("Carl Cracken", 25.50, 2012, 10, 3);
