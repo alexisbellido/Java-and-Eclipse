@@ -7,8 +7,8 @@ public class UsingFiles {
 
 	public static void main(String[] args) throws FileNotFoundException, MyFileNotFoundException
 	{
-//		String fileName = "/home/alexis/Downloads/myfile.txt";
-		String fileName = "/Users/alexis/test.txt";
+		String fileName = "/home/alexis/Downloads/myfile.txt";
+//		String fileName = "/Users/alexis/test.txt";
 		
 //		System.out.println("Read a file line by line");
 //		PrintWriter out = new PrintWriter(fileName);
