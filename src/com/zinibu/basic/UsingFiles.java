@@ -24,6 +24,7 @@ public class UsingFiles {
 			in = new Scanner(new File(fileName));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
+			// A comment added
 			e.printStackTrace();
 		}
 
