@@ -26,7 +26,15 @@ public class UsingFiles {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Number: " + i);
+		}
+
+		int age = 24;
+		System.out.println(age == 24 ? "Yes, 24" : "No");
+		System.out.printf("My age is %d%n", age);
+
 		while (in.hasNextLine())
 		{
 			String line = in.nextLine();
