@@ -30,6 +30,8 @@ public class UsingFiles {
 
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Number: " + i);
+			// Some comments
+			// and more
 		}
 
 		int age = 24;
